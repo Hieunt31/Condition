@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bmi = cân_nặng / ( chiều_cao ^ 2 )
+        //17 ≤ BMI < 18.5: Gầy độ I
+        //18.5 ≤ BMI < 25: Bình thường
+        //25 ≤ BMI < 30: Thừa cân
+        let weight = +prompt("nhập cân nặng");
+        let height = +prompt('Nhập chiều cao');
+        let bmi = weight / (height * height)
+        if (bmi >= 17 && bmi < 18.5) {
+            alert('Gầy')
+        } else if (bmi >= 18.5 && bmi < 25) {
+            alert('Bình thường')
+        } else if (bmi >= 25 && bmi < 30) {
+            alert('thừa cân')
+        }
+
+    </script>
+</body>
+
+</html>

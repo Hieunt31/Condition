@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Giá hoa quả</h1>
+<input type="text" id="txt">
+<button onclick="check()">Xem giá</button>
+<h3 id="rs"> </h3>
+
+<body>
+    <script>
+        //Ổi: 20000 VNĐ/kg Dưa Hấu: 20000 VNĐ/kg Táo: 30000 VNĐ/kg Xoài: 30000 VNĐ/kg
+        //Cam: 40000 VNĐ/kg Chôm Chôm: 40000 VNĐ/kg Măng Cụt: 50000 VNĐ/kg
+        function check() {
+            let str = document.getElementById('txt').value;
+            let result = '';
+            if (str == 'Ổi' || str=='Dưa hấu') {
+                result = '20000 VNĐ';
+            }
+            if (str == 'Táo' || str =='Xoài') {
+                result = '30000 VNĐ';
+            }
+            if (str == 'Cam'|| str=='Chôm Chôm') {
+                result = '40000 VNĐ';
+            }
+            if (str == 'Măng cụt') {
+                result = '50000 VNĐ';
+            }
+            document.getElementById('rs').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
